@@ -11,7 +11,64 @@
     "subtitle": "Hologramview Technologies is a software innovation company dedicated to building applications that transform industries and empower individuals.",
     "mission": "Our mission is to combine creativity, intelligence, and usability into software solutions that make technology more human-centered and future-ready.",
     "focusTitle": "We focus on creating tools for:",
-    "productsTitle": "Our Products & Innovations"
+    "productsTitle": "Our Products & Innovations",
+    "ourFocus": "Our Focus",
+    "ourProducts": "Our Products",
+    "comingSoon": "Coming Soon!"
+  },
+  "focusAreas": {
+    "aiTechnology": {
+      "title": "AI Technology Platforms",
+      "description": "Advancing creativity and productivity with intelligent applications."
+    },
+    "travel": {
+      "title": "Travel & Exploration",
+      "description": "Enabling people to discover the world through immersive and data-driven tools."
+    },
+    "music": {
+      "title": "Music & Creativity",
+      "description": "Building platforms that inspire creators and innovators."
+    },
+    "education": {
+      "title": "Education & Learning",
+      "description": "Reimagining how people learn, connect, and grow."
+    },
+    "productivity": {
+      "title": "Productivity Tools",
+      "description": "Designing extensions and apps that simplify work on Windows, macOS, and Chrome."
+    }
+  },
+  "products": {
+    "aiStudioChain": {
+      "name": "AI Studio Chain",
+      "description": "An AI-powered IDE and chat interface built for developers and vibecoders. Combines smart code assistance, real-time collaboration, and generative AI tools.",
+      "shortDesc": "AI IDE + chat interface for developers."
+    },
+    "dynamicWorldExplorer": {
+      "name": "Dynamic World Explorer",
+      "description": "A data-rich discovery platform that brings travel, culture, and world insights together in one interactive space.",
+      "shortDesc": "Global insights for travel and culture."
+    },
+    "floatlearn": {
+      "name": "Floatlearn",
+      "description": "An innovative floating learning system that teaches you while you work, blending micro-learning with productivity.",
+      "shortDesc": "Floating learning system while you work."
+    },
+    "spaceChoices": {
+      "name": "Space Choices",
+      "description": "A productivity tool that chooses screens fast and lets you save window states and sessions.",
+      "shortDesc": "Save and switch window states instantly."
+    },
+    "tigerSimfoniPortal": {
+      "name": "Tiger Simfoni Portal",
+      "description": "A training platform simulator for travel industry students to practice for important exams.",
+      "shortDesc": "Travel exam training simulator."
+    },
+    "scholare": {
+      "name": "Scholare",
+      "description": "An education meeting point that connects teachers and students of many disciplines.",
+      "shortDesc": "Connect teachers and students worldwide."
+    }
   },
   "footer": {
     "company": "Hologramview Technologies",
@@ -29,7 +86,40 @@
     "customSoftware": "Custom Software Development",
     "aiSolutions": "AI & Machine Learning Solutions",
     "webDevelopment": "Web & Mobile Development",
-    "consulting": "Technology Consulting"
+    "consulting": "Technology Consulting",
+    "heroTitle": "Hologramview Technologies",
+    "heroSubtitle": "Our Services",
+    "heroDescription": "At Hologramview Technologies, we create innovative digital solutions tailored to your needs.",
+    "weDesign": "We Design:",
+    "weDesignSubtitle": "From concept to deployment, we deliver comprehensive digital solutions",
+    "contactTitle": "Contact Us",
+    "contactDescription": "Ready to bring your digital vision to life? Let's discuss your project.",
+    "items": {
+      "customSoftware": {
+        "name": "Custom Software",
+        "description": "Tailored software solutions built from the ground up to meet your specific business requirements and workflows."
+      },
+      "webpages": {
+        "name": "Webpages",
+        "description": "Modern, responsive websites that showcase your brand and engage your audience across all devices."
+      },
+      "softwareSystems": {
+        "name": "Software Systems",
+        "description": "Complex enterprise-grade systems designed to streamline operations and boost productivity."
+      },
+      "iosApps": {
+        "name": "iOS Apps",
+        "description": "Native iPhone and iPad applications that deliver exceptional user experiences on Apple devices."
+      },
+      "androidApps": {
+        "name": "Android Apps",
+        "description": "Powerful Android applications optimized for the diverse Android ecosystem and user base."
+      },
+      "aiImplementation": {
+        "name": "AI Implementation",
+        "description": "Intelligent automation and AI-powered features to transform your business processes and decision-making."
+      }
+    }
   },
   "about": {
     "title": "About Us",

@@ -1,4 +1,6 @@
-import { useRouter } from 'next/router'
+'use client'
+
+import { usePathname } from 'next/navigation'
 
 // Import all translation files
 import en from '@/locales/en.json'
@@ -10,6 +12,7 @@ import zh from '@/locales/zh.json'
 import pt from '@/locales/pt.json'
 import it from '@/locales/it.json'
 import ru from '@/locales/ru.json'
+import pl from '@/locales/pl.json'
 
 const translations = {
   en,
@@ -21,24 +24,39 @@ const translations = {
   pt,
   it,
   ru,
+  pl,
 }
 
-export const languages = [
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'es', name: 'Español', flag: '🇪🇸' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷' },
-  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-  { code: 'ja', name: '日本語', flag: '🇯🇵' },
-  { code: 'zh', name: '中文', flag: '🇨🇳' },
-  { code: 'pt', name: 'Português', flag: '🇵🇹' },
-  { code: 'it', name: 'Italiano', flag: '🇮🇹' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
-]
+import { locales, defaultLocale, languages } from './constants'
 
-export function useTranslation() {
-  const router = useRouter()
-  const { locale = 'en' } = router
+export { locales, defaultLocale, languages }
+
+export function getLocaleFromPathname(pathname: string): string {
+  const pathParts = pathname.split('/').filter(Boolean)
+  const potentialLocale = pathParts[0]
+  return locales.includes(potentialLocale) ? potentialLocale : defaultLocale
+}
+
+export function useTranslation(locale?: string) {
+  const pathname = usePathname()
+  const currentLocale = locale || getLocaleFromPathname(pathname)
   
+  const t = (key: string): string => {
+    const keys = key.split('.')
+    let value: any = translations[currentLocale as keyof typeof translations] || translations.en
+    
+    for (const k of keys) {
+      value = value?.[k]
+    }
+    
+    return value || key
+  }
+  
+  return { t, locale: currentLocale, languages }
+}
+
+// Server-side translation function
+export function getTranslation(locale: string = defaultLocale) {
   const t = (key: string): string => {
     const keys = key.split('.')
     let value: any = translations[locale as keyof typeof translations] || translations.en

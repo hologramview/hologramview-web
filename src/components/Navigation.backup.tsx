@@ -1,11 +1,20 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { products } from '@/constants/content'
 import LanguageSwitcher from './LanguageSwitcher'
 import { useTranslation } from '@/lib/i18n'
 import { usePathname, useRouter } from 'next/navigation'
+
+const navigation = [
+  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Support', href: '/support' },
+]
 
 export default function Navigation({ locale }: { locale: string }) {
   const { t } = useTranslation(locale)
@@ -32,6 +41,35 @@ export default function Navigation({ locale }: { locale: string }) {
       router.push(`/${locale}#products`)
     }
   }
+
+  const handleProductsClick = (e: React.MouseEvent) => {
+    // Close the dropdown immediately when Products is clicked
+    setIsProductsOpen(false)
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout)
+      setHoverTimeout(null)
+    }
+    
+    e.preventDefault()
+    
+    // Check if we're on the home page
+    const isHomePage = pathname === `/${locale}`
+    
+    if (isHomePage) {
+      // If we're already on home page, just scroll to products
+      const productsSection = document.getElementById('products')
+      if (productsSection) {
+        productsSection.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
+    } else {
+      // If we're on a different page, navigate to home page with hash
+      router.push(`/${locale}#products`)
+    }
+  }
+
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
@@ -116,7 +154,7 @@ export default function Navigation({ locale }: { locale: string }) {
               {t('nav.about')}
             </Link>
             
-            {/* Products Link - Simple link, no dropdown */}
+            {/* Products Link - Dropdown temporarily disabled */}
             <Link
               href={`/${locale}#products`}
               onClick={handleProductsClick}
@@ -125,7 +163,59 @@ export default function Navigation({ locale }: { locale: string }) {
               {t('nav.products')}
             </Link>
             
-            {/* Services Link */}
+            {/* Products Dropdown - HIDDEN FOR NOW (uncomment entire section when ready)
+            <div 
+              className="relative"
+              onMouseEnter={handleProductsMouseEnter}
+              onMouseLeave={handleProductsMouseLeave}
+            >
+              <Link
+                href={`/${locale}#products`}
+                onClick={handleProductsClick}
+                className="text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
+              >
+                {t('nav.products')}
+              </Link>
+              
+              {isProductsOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute top-full right-0 mt-1 w-80 max-w-[90vw] bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50 transform -translate-x-0 lg:-translate-x-1/2"
+                  onMouseEnter={handleDropdownMouseEnter}
+                  onMouseLeave={handleDropdownMouseLeave}
+                >
+                  {products.map((product) => (
+                    <Link
+                      key={product.name}
+                      href={`/${locale}/products/${product.name.toLowerCase().replace(/ /g, '-')}`}
+                      className="block px-4 py-3 hover:bg-blue-50 hover:border-l-4 hover:border-blue-500 transition-all duration-200 rounded-r-lg"
+                    >
+                      <div className="flex items-start space-x-3">
+                        <div className="w-12 h-12 relative rounded-md overflow-hidden flex-shrink-0">
+                          <Image
+                            src={product.image}
+                            alt={product.name}
+                            fill
+                            className="object-cover"
+                            sizes="48px"
+                          />
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-sm font-semibold text-gray-900">{product.name}</h3>
+                          <p className="text-xs text-gray-600 mt-1">{product.shortDesc}</p>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </motion.div>
+              )}
+            </div>
+            */
+            
+            {/* Remaining Navigation Items */}
             <Link
               href={`/${locale}/services`}
               className="text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"

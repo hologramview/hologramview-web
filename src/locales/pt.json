@@ -11,7 +11,64 @@
     "subtitle": "A Hologramview Technologies é uma empresa de inovação em software dedicada a construir aplicações que transformam indústrias e capacitam indivíduos.",
     "mission": "Nossa missão é combinar criatividade, inteligência e usabilidade em soluções de software que tornem a tecnologia mais centrada no ser humano e preparada para o futuro.",
     "focusTitle": "Focamos na criação de ferramentas para:",
-    "productsTitle": "Nossos Produtos e Inovações"
+    "productsTitle": "Nossos Produtos e Inovações",
+    "ourFocus": "Nosso Foco",
+    "ourProducts": "Nossos Produtos",
+    "comingSoon": "Em Breve!"
+  },
+  "focusAreas": {
+    "aiTechnology": {
+      "title": "Plataformas de Tecnologia IA",
+      "description": "Avançando criatividade e produtividade com aplicações inteligentes."
+    },
+    "travel": {
+      "title": "Viagens e Exploração",
+      "description": "Permitindo que as pessoas descubram o mundo através de ferramentas imersivas e baseadas em dados."
+    },
+    "music": {
+      "title": "Música e Criatividade",
+      "description": "Construindo plataformas que inspiram criadores e inovadores."
+    },
+    "education": {
+      "title": "Educação e Aprendizagem",
+      "description": "Reimaginando como as pessoas aprendem, se conectam e crescem."
+    },
+    "productivity": {
+      "title": "Ferramentas de Produtividade",
+      "description": "Projetando extensões e aplicativos que simplificam o trabalho no Windows, macOS e Chrome."
+    }
+  },
+  "products": {
+    "aiStudioChain": {
+      "name": "AI Studio Chain",
+      "description": "Uma IDE e interface de chat alimentada por IA construída para desenvolvedores e vibecoders. Combina assistência inteligente de código, colaboração em tempo real e ferramentas de IA generativa.",
+      "shortDesc": "IDE IA + interface de chat para desenvolvedores."
+    },
+    "dynamicWorldExplorer": {
+      "name": "Dynamic World Explorer",
+      "description": "Uma plataforma de descoberta rica em dados que reúne viagens, cultura e insights globais em um espaço interativo.",
+      "shortDesc": "Insights globais para viagens e cultura."
+    },
+    "floatlearn": {
+      "name": "Floatlearn",
+      "description": "Um sistema de aprendizagem flutuante inovador que ensina enquanto você trabalha, misturando micro-aprendizagem com produtividade.",
+      "shortDesc": "Sistema de aprendizagem flutuante durante o trabalho."
+    },
+    "spaceChoices": {
+      "name": "Space Choices",
+      "description": "Uma ferramenta de produtividade que escolhe telas rapidamente e permite salvar estados de janelas e sessões.",
+      "shortDesc": "Salve e alterne estados de janelas instantaneamente."
+    },
+    "tigerSimfoniPortal": {
+      "name": "Tiger Simfoni Portal",
+      "description": "Um simulador de plataforma de treinamento para estudantes da indústria de viagens praticarem exames importantes.",
+      "shortDesc": "Simulador de treinamento para exames de viagem."
+    },
+    "scholare": {
+      "name": "Scholare",
+      "description": "Um ponto de encontro educacional que conecta professores e alunos de muitas disciplinas.",
+      "shortDesc": "Conecta professores e alunos globalmente."
+    }
   },
   "footer": {
     "company": "Hologramview Technologies",

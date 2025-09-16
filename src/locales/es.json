@@ -11,7 +11,64 @@
     "subtitle": "Hologramview Technologies es una empresa de innovación en software dedicada a construir aplicaciones que transforman industrias y empoderan individuos.",
     "mission": "Nuestra misión es combinar creatividad, inteligencia y usabilidad en soluciones de software que hagan la tecnología más centrada en las personas y lista para el futuro.",
     "focusTitle": "Nos enfocamos en crear herramientas para:",
-    "productsTitle": "Nuestros Productos e Innovaciones"
+    "productsTitle": "Nuestros Productos e Innovaciones",
+    "ourFocus": "Nuestro Enfoque",
+    "ourProducts": "Nuestros Productos",
+    "comingSoon": "¡Próximamente!"
+  },
+  "focusAreas": {
+    "aiTechnology": {
+      "title": "Plataformas de Tecnología IA",
+      "description": "Avanzando la creatividad y productividad con aplicaciones inteligentes."
+    },
+    "travel": {
+      "title": "Viajes y Exploración",
+      "description": "Permitiendo a las personas descubrir el mundo a través de herramientas inmersivas y basadas en datos."
+    },
+    "music": {
+      "title": "Música y Creatividad",
+      "description": "Construyendo plataformas que inspiran a creadores e innovadores."
+    },
+    "education": {
+      "title": "Educación y Aprendizaje",
+      "description": "Reimaginando cómo las personas aprenden, se conectan y crecen."
+    },
+    "productivity": {
+      "title": "Herramientas de Productividad",
+      "description": "Diseñando extensiones y aplicaciones que simplifican el trabajo en Windows, macOS y Chrome."
+    }
+  },
+  "products": {
+    "aiStudioChain": {
+      "name": "AI Studio Chain",
+      "description": "Un IDE y interfaz de chat impulsado por IA construido para desarrolladores y vibecoders. Combina asistencia inteligente de código, colaboración en tiempo real y herramientas de IA generativa.",
+      "shortDesc": "IDE de IA + interfaz de chat para desarrolladores."
+    },
+    "dynamicWorldExplorer": {
+      "name": "Dynamic World Explorer",
+      "description": "Una plataforma de descubrimiento rica en datos que reúne viajes, cultura e insights mundiales en un espacio interactivo.",
+      "shortDesc": "Insights globales para viajes y cultura."
+    },
+    "floatlearn": {
+      "name": "Floatlearn",
+      "description": "Un sistema de aprendizaje flotante innovador que te enseña mientras trabajas, mezclando micro-aprendizaje con productividad.",
+      "shortDesc": "Sistema de aprendizaje flotante mientras trabajas."
+    },
+    "spaceChoices": {
+      "name": "Space Choices",
+      "description": "Una herramienta de productividad que elige pantallas rápidamente y te permite guardar estados de ventanas y sesiones.",
+      "shortDesc": "Guarda y cambia estados de ventanas instantáneamente."
+    },
+    "tigerSimfoniPortal": {
+      "name": "Tiger Simfoni Portal",
+      "description": "Un simulador de plataforma de entrenamiento para estudiantes de la industria de viajes para practicar exámenes importantes.",
+      "shortDesc": "Simulador de entrenamiento para exámenes de viajes."
+    },
+    "scholare": {
+      "name": "Scholare",
+      "description": "Un punto de encuentro educativo que conecta maestros y estudiantes de muchas disciplinas.",
+      "shortDesc": "Conecta maestros y estudiantes mundialmente."
+    }
   },
   "footer": {
     "company": "Hologramview Technologies",
@@ -29,7 +86,40 @@
     "customSoftware": "Desarrollo de Software Personalizado",
     "aiSolutions": "Soluciones de IA y Aprendizaje Automático",
     "webDevelopment": "Desarrollo Web y Móvil",
-    "consulting": "Consultoría Tecnológica"
+    "consulting": "Consultoría Tecnológica",
+    "heroTitle": "Hologramview Technologies",
+    "heroSubtitle": "Nuestros Servicios",
+    "heroDescription": "En Hologramview Technologies, creamos soluciones digitales innovadoras adaptadas a sus necesidades.",
+    "weDesign": "Diseñamos:",
+    "weDesignSubtitle": "Desde el concepto hasta la implementación, entregamos soluciones digitales integrales",
+    "contactTitle": "Contáctanos",
+    "contactDescription": "¿Listo para dar vida a su visión digital? Hablemos de su proyecto.",
+    "items": {
+      "customSoftware": {
+        "name": "Software Personalizado",
+        "description": "Soluciones de software a medida construidas desde cero para satisfacer sus requisitos comerciales y flujos de trabajo específicos."
+      },
+      "webpages": {
+        "name": "Páginas Web",
+        "description": "Sitios web modernos y responsivos que muestran su marca y atraen a su audiencia en todos los dispositivos."
+      },
+      "softwareSystems": {
+        "name": "Sistemas de Software",
+        "description": "Sistemas complejos de nivel empresarial diseñados para optimizar operaciones y aumentar la productividad."
+      },
+      "iosApps": {
+        "name": "Aplicaciones iOS",
+        "description": "Aplicaciones nativas para iPhone e iPad que brindan experiencias de usuario excepcionales en dispositivos Apple."
+      },
+      "androidApps": {
+        "name": "Aplicaciones Android",
+        "description": "Aplicaciones Android potentes optimizadas para el diverso ecosistema Android y base de usuarios."
+      },
+      "aiImplementation": {
+        "name": "Implementación de IA",
+        "description": "Automatización inteligente y características impulsadas por IA para transformar sus procesos comerciales y toma de decisiones."
+      }
+    }
   },
   "about": {
     "title": "Acerca de Nosotros",

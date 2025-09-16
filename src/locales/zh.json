@@ -11,7 +11,64 @@
     "subtitle": "Hologramview Technologies是一家软件创新公司，致力于构建变革行业并赋能个人的应用程序。",
     "mission": "我们的使命是将创造力、智能和可用性结合到软件解决方案中，使技术更加以人为本，为未来做好准备。",
     "focusTitle": "我们专注于为以下领域创建工具：",
-    "productsTitle": "我们的产品与创新"
+    "productsTitle": "我们的产品与创新",
+    "ourFocus": "我们的焦点",
+    "ourProducts": "我们的产品",
+    "comingSoon": "即将推出！"
+  },
+  "focusAreas": {
+    "aiTechnology": {
+      "title": "AI技术平台",
+      "description": "通过智能应用推进创造力和生产力。"
+    },
+    "travel": {
+      "title": "旅行与探索",
+      "description": "让人们通过沉浸式和基于数据的工具发现世界。"
+    },
+    "music": {
+      "title": "音乐与创意",
+      "description": "构建激发创造者和创新者的平台。"
+    },
+    "education": {
+      "title": "教育与学习",
+      "description": "重新想象人们如何学习、连接和成长。"
+    },
+    "productivity": {
+      "title": "生产力工具",
+      "description": "设计在Windows、macOS和Chrome上简化工作的扩展和应用。"
+    }
+  },
+  "products": {
+    "aiStudioChain": {
+      "name": "AI Studio Chain",
+      "description": "为开发人员和vibecoders构建的AI驱动IDE和聊天界面。结合智能代码辅助、实时协作和生成式AI工具。",
+      "shortDesc": "AI IDE + 开发人员聊天界面。"
+    },
+    "dynamicWorldExplorer": {
+      "name": "Dynamic World Explorer",
+      "description": "一个数据丰富的发现平台，将旅行、文化和全球洞察聚集在一个交互空间中。",
+      "shortDesc": "旅行和文化的全球洞察。"
+    },
+    "floatlearn": {
+      "name": "Floatlearn",
+      "description": "一个创新的浮动学习系统，在您工作时教学，将微学习与生产力相结合。",
+      "shortDesc": "工作时的浮动学习系统。"
+    },
+    "spaceChoices": {
+      "name": "Space Choices",
+      "description": "一个生产力工具，可快速选择屏幕并允许您保存窗口状态和会话。",
+      "shortDesc": "即时保存和切换窗口状态。"
+    },
+    "tigerSimfoniPortal": {
+      "name": "Tiger Simfoni Portal",
+      "description": "为旅游行业学生提供的培训平台模拟器，用于练习重要考试。",
+      "shortDesc": "旅游考试培训模拟器。"
+    },
+    "scholare": {
+      "name": "Scholare",
+      "description": "一个教育会面点，连接多个学科的老师和学生。",
+      "shortDesc": "连接全球老师和学生。"
+    }
   },
   "footer": {
     "company": "Hologramview Technologies",

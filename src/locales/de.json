@@ -11,7 +11,64 @@
     "subtitle": "Hologramview Technologies ist ein Software-Innovationsunternehmen, das sich der Entwicklung von Anwendungen widmet, die Industrien transformieren und Menschen stärken.",
     "mission": "Unsere Mission ist es, Kreativität, Intelligenz und Benutzerfreundlichkeit in Software-Lösungen zu kombinieren, die Technologie menschenzentrierter und zukunftsfähig machen.",
     "focusTitle": "Wir konzentrieren uns auf die Entwicklung von Tools für:",
-    "productsTitle": "Unsere Produkte und Innovationen"
+    "productsTitle": "Unsere Produkte und Innovationen",
+    "ourFocus": "Unser Fokus",
+    "ourProducts": "Unsere Produkte",
+    "comingSoon": "Bald verfügbar!"
+  },
+  "focusAreas": {
+    "aiTechnology": {
+      "title": "KI-Technologie-Plattformen",
+      "description": "Förderung von Kreativität und Produktivität mit intelligenten Anwendungen."
+    },
+    "travel": {
+      "title": "Reisen & Erkundung",
+      "description": "Menschen ermöglichen, die Welt durch immersive und datenbasierte Tools zu entdecken."
+    },
+    "music": {
+      "title": "Musik & Kreativität",
+      "description": "Aufbau von Plattformen, die Kreative und Innovatoren inspirieren."
+    },
+    "education": {
+      "title": "Bildung & Lernen",
+      "description": "Neugestaltung, wie Menschen lernen, sich verbinden und wachsen."
+    },
+    "productivity": {
+      "title": "Produktivitäts-Tools",
+      "description": "Entwicklung von Erweiterungen und Apps, die die Arbeit auf Windows, macOS und Chrome vereinfachen."
+    }
+  },
+  "products": {
+    "aiStudioChain": {
+      "name": "AI Studio Chain",
+      "description": "Eine KI-gestützte IDE und Chat-Schnittstelle für Entwickler und Vibecoders. Kombiniert intelligente Code-Unterstützung, Echtzeit-Zusammenarbeit und generative KI-Tools.",
+      "shortDesc": "KI-IDE + Chat-Schnittstelle für Entwickler."
+    },
+    "dynamicWorldExplorer": {
+      "name": "Dynamic World Explorer",
+      "description": "Eine datenreiche Entdeckungsplattform, die Reisen, Kultur und weltweite Einblicke in einem interaktiven Raum zusammenbringt.",
+      "shortDesc": "Globale Einblicke für Reisen und Kultur."
+    },
+    "floatlearn": {
+      "name": "Floatlearn",
+      "description": "Ein innovatives schwebendes Lernsystem, das Sie während der Arbeit unterrichtet und Mikro-Lernen mit Produktivität verbindet.",
+      "shortDesc": "Schwebendes Lernsystem während der Arbeit."
+    },
+    "spaceChoices": {
+      "name": "Space Choices",
+      "description": "Ein Produktivitäts-Tool, das schnell Bildschirme auswählt und Ihnen ermöglicht, Fensterzustände und Sitzungen zu speichern.",
+      "shortDesc": "Speichern und wechseln Sie Fensterzustände sofort."
+    },
+    "tigerSimfoniPortal": {
+      "name": "Tiger Simfoni Portal",
+      "description": "Ein Trainingsplattform-Simulator für Studenten der Reisebranche zum Üben wichtiger Prüfungen.",
+      "shortDesc": "Reiseprüfungs-Trainings-Simulator."
+    },
+    "scholare": {
+      "name": "Scholare",
+      "description": "Ein Bildungstreffpunkt, der Lehrer und Studenten vieler Disziplinen verbindet.",
+      "shortDesc": "Verbindet Lehrer und Studenten weltweit."
+    }
   },
   "footer": {
     "company": "Hologramview Technologies",
@@ -29,7 +86,40 @@
     "customSoftware": "Individuelle Softwareentwicklung",
     "aiSolutions": "KI- und Machine Learning-Lösungen",
     "webDevelopment": "Web- und Mobile-Entwicklung",
-    "consulting": "Technologie-Beratung"
+    "consulting": "Technologie-Beratung",
+    "heroTitle": "Hologramview Technologies",
+    "heroSubtitle": "Unsere Dienstleistungen",
+    "heroDescription": "Bei Hologramview Technologies erstellen wir innovative digitale Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind.",
+    "weDesign": "Wir Entwickeln:",
+    "weDesignSubtitle": "Vom Konzept bis zur Bereitstellung liefern wir umfassende digitale Lösungen",
+    "contactTitle": "Kontaktieren Sie uns",
+    "contactDescription": "Bereit, Ihre digitale Vision zum Leben zu erwecken? Lassen Sie uns über Ihr Projekt sprechen.",
+    "items": {
+      "customSoftware": {
+        "name": "Maßgeschneiderte Software",
+        "description": "Maßgeschneiderte Software-Lösungen von Grund auf entwickelt, um Ihre spezifischen Geschäftsanforderungen und Arbeitsabläufe zu erfüllen."
+      },
+      "webpages": {
+        "name": "Webseiten",
+        "description": "Moderne, responsive Websites, die Ihre Marke präsentieren und Ihr Publikum auf allen Geräten ansprechen."
+      },
+      "softwareSystems": {
+        "name": "Software-Systeme",
+        "description": "Komplexe Unternehmenssysteme, die darauf ausgelegt sind, Abläufe zu optimieren und die Produktivität zu steigern."
+      },
+      "iosApps": {
+        "name": "iOS-Apps",
+        "description": "Native iPhone- und iPad-Anwendungen, die außergewöhnliche Benutzererfahrungen auf Apple-Geräten bieten."
+      },
+      "androidApps": {
+        "name": "Android-Apps",
+        "description": "Leistungsstarke Android-Anwendungen, optimiert für das vielfältige Android-Ökosystem und die Nutzerbasis."
+      },
+      "aiImplementation": {
+        "name": "KI-Implementierung",
+        "description": "Intelligente Automatisierung und KI-gesteuerte Funktionen zur Transformation Ihrer Geschäftsprozesse und Entscheidungsfindung."
+      }
+    }
   },
   "about": {
     "title": "Über Uns",

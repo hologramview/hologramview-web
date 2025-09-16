@@ -11,7 +11,64 @@
     "subtitle": "Hologramview Technologiesは、業界を変革し個人をエンパワーするアプリケーションの構築に専念するソフトウェアイノベーション企業です。",
     "mission": "私たちのミッションは、創造性、知性、使いやすさを組み合わせて、技術をより人間中心で未来に備えたソフトウェアソリューションにすることです。",
     "focusTitle": "私たちが注力するツールの分野：",
-    "productsTitle": "製品とイノベーション"
+    "productsTitle": "製品とイノベーション",
+    "ourFocus": "私たちのフォーカス",
+    "ourProducts": "私たちの製品",
+    "comingSoon": "近日公開！"
+  },
+  "focusAreas": {
+    "aiTechnology": {
+      "title": "AI技術プラットフォーム",
+      "description": "知的アプリケーションで創造性と生産性を向上。"
+    },
+    "travel": {
+      "title": "旅行と探検",
+      "description": "没入的でデータ駆動型ツールで人々が世界を発見できるように。"
+    },
+    "music": {
+      "title": "音楽と創造性",
+      "description": "クリエイターとイノベーターをインスパイアするプラットフォームを構築。"
+    },
+    "education": {
+      "title": "教育と学習",
+      "description": "人々が学び、つながり、成長する方法を再想像。"
+    },
+    "productivity": {
+      "title": "生産性ツール",
+      "description": "Windows、macOS、Chromeでの作業を簡素化する拡張機能とアプリを設計。"
+    }
+  },
+  "products": {
+    "aiStudioChain": {
+      "name": "AI Studio Chain",
+      "description": "開発者とバイブコーダー向けのAI駆動IDEとチャットインターフェース。スマートコードアシスタント、リアルタイムコラボレーション、生成AIツールを統合。",
+      "shortDesc": "AI IDE + 開発者向けチャットインターフェース。"
+    },
+    "dynamicWorldExplorer": {
+      "name": "Dynamic World Explorer",
+      "description": "旅行、文化、世界の洞察を一つのインタラクティブな空間に統合したデータ豊富な発見プラットフォーム。",
+      "shortDesc": "旅行と文化のグローバル洞察。"
+    },
+    "floatlearn": {
+      "name": "Floatlearn",
+      "description": "作業中に学習できる革新的なフローティング学習システムで、マイクロラーニングと生産性を融合。",
+      "shortDesc": "作業中のフローティング学習システム。"
+    },
+    "spaceChoices": {
+      "name": "Space Choices",
+      "description": "スクリーンを高速で選択し、ウィンドウの状態とセッションを保存できる生産性ツール。",
+      "shortDesc": "ウィンドウ状態を瞬時に保存・切り替え。"
+    },
+    "tigerSimfoniPortal": {
+      "name": "Tiger Simfoni Portal",
+      "description": "旅行業界の学生が重要な試験の練習をするためのトレーニングプラットフォームシミュレーター。",
+      "shortDesc": "旅行試験トレーニングシミュレーター。"
+    },
+    "scholare": {
+      "name": "Scholare",
+      "description": "多くの分野の教師と学生をつなぐ教育の出会いの場。",
+      "shortDesc": "世界中の教師と学生をつなぎます。"
+    }
   },
   "footer": {
     "company": "Hologramview Technologies",

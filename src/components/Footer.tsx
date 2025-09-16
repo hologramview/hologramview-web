@@ -2,8 +2,36 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { useTranslation } from '@/lib/i18n'
+import { usePathname, useRouter } from 'next/navigation'
+import { getLocaleFromPathname } from '@/lib/i18n'
 
 export default function Footer() {
+  const pathname = usePathname()
+  const router = useRouter()
+  const locale = getLocaleFromPathname(pathname)
+  const { t } = useTranslation(locale)
+  
+  const handleProductsClick = (e: React.MouseEvent) => {
+    e.preventDefault()
+    
+    // Check if we're on the home page
+    const isHomePage = pathname === `/${locale}`
+    
+    if (isHomePage) {
+      // If we're already on home page, just scroll to products
+      const productsSection = document.getElementById('products')
+      if (productsSection) {
+        productsSection.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
+    } else {
+      // If we're on a different page, navigate to home page with hash
+      router.push(`/${locale}#products`)
+    }
+  }
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
@@ -20,10 +48,10 @@ export default function Footer() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-xl font-bold">Hologramview Technologies</h3>
+              <h3 className="text-xl font-bold">{t('footer.company')}</h3>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              We create innovative digital solutions tailored to your needs. From custom software to AI implementation, we build technology that transforms businesses.
+              {t('footer.description')}
             </p>
             <div className="flex items-center">
               <span className="text-2xl mr-2">📧</span>
@@ -38,30 +66,31 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link 
-                  href="/" 
+                  href={`/${locale}`} 
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                 >
-                  Home
+                  {t('nav.home')}
                 </Link>
               </li>
               <li>
                 <Link 
-                  href="/#products" 
+                  href={`/${locale}#products`} 
+                  onClick={handleProductsClick}
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                 >
-                  Products
+                  {t('nav.products')}
                 </Link>
               </li>
               <li>
                 <Link 
-                  href="/services" 
+                  href={`/${locale}/services`} 
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                 >
-                  Services
+                  {t('nav.services')}
                 </Link>
               </li>
             </ul>
@@ -69,22 +98,22 @@ export default function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Legal</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.legal')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link 
-                  href="/terms" 
+                  href={`/${locale}/terms`} 
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                 >
-                  Terms of Service
+                  {t('footer.termsOfService')}
                 </Link>
               </li>
               <li>
                 <Link 
-                  href="/privacy" 
+                  href={`/${locale}/privacy`} 
                   className="text-gray-300 hover:text-white transition-colors duration-200"
                 >
-                  Privacy Policy
+                  {t('footer.privacyPolicy')}
                 </Link>
               </li>
             </ul>
@@ -94,10 +123,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm mb-4 sm:mb-0">
-            © {new Date().getFullYear()} Hologramview Technologies. All rights reserved.
+            © {new Date().getFullYear()} {t('footer.company')}. {t('footer.copyright')}
           </div>
           <div className="text-gray-400 text-sm">
-            Built with ❤️ by Hologramview Technologies
+            {t('footer.builtWith')}
           </div>
         </div>
       </div>

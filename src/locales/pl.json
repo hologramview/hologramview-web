@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "products": "Produkty",
+    "services": "Usługi",
+    "language": "Język"
+  },
+  "home": {
+    "title": "O Hologramview Technologies",
+    "subtitle": "Hologramview Technologies to firma zajmująca się innowacjami w oprogramowaniu, dedykowana tworzeniu aplikacji, które przekształcają branże i wspierają jednostki.",
+    "mission": "Naszą misją jest łączenie kreatywności, inteligencji i użyteczności w rozwiązaniach programowych, które czynią technologię bardziej skoncentrowaną na człowieku i gotową na przyszłość.",
+    "focusTitle": "Skupiamy się na tworzeniu narzędzi dla:",
+    "productsTitle": "Nasze Produkty i Innowacje",
+    "ourFocus": "Nasz Fokus",
+    "ourProducts": "Nasze Produkty",
+    "comingSoon": "Wkrótce!"
+  },
+  "focusAreas": {
+    "aiTechnology": {
+      "title": "Platformy Technologii AI",
+      "description": "Rozwijanie kreatywności i produktywności za pomocą inteligentnych aplikacji."
+    },
+    "travel": {
+      "title": "Podróże i Eksploracja",
+      "description": "Umożliwianie ludziom odkrywania świata za pomocą immersyjnych narzędzi opartych na danych."
+    },
+    "music": {
+      "title": "Muzyka i Kreatywność",
+      "description": "Budowanie platform, które inspirują twórców i innowatorów."
+    },
+    "education": {
+      "title": "Edukacja i Nauka",
+      "description": "Przedefiniowanie sposobu, w jaki ludzie się uczą, łączą i rozwijają."
+    },
+    "productivity": {
+      "title": "Narzędzia Produktywności",
+      "description": "Projektowanie rozszerzeń i aplikacji, które upraszczają pracę w Windows, macOS i Chrome."
+    }
+  },
+  "products": {
+    "aiStudioChain": {
+      "name": "AI Studio Chain",
+      "description": "IDE i interfejs czatu napędzany przez AI, stworzony dla programistów i vibecoderów. Łączy inteligentną pomoc w kodowaniu, współpracę w czasie rzeczywistym i narzędzia generatywnej AI.",
+      "shortDesc": "AI IDE + interfejs czatu dla programistów."
+    },
+    "dynamicWorldExplorer": {
+      "name": "Dynamic World Explorer",
+      "description": "Platforma odkrywania bogata w dane, która łączy podróże, kulturę i światowe spostrzeżenia w jednej interaktywnej przestrzeni.",
+      "shortDesc": "Globalne spostrzeżenia dla podróży i kultury."
+    },
+    "floatlearn": {
+      "name": "Floatlearn",
+      "description": "Innowacyjny system nauki pływającej, który uczy podczas pracy, łącząc mikro-naukę z produktywnością.",
+      "shortDesc": "System nauki pływającej podczas pracy."
+    },
+    "spaceChoices": {
+      "name": "Space Choices",
+      "description": "Narzędzie produktywności, które szybko wybiera ekrany i pozwala zapisywać stany okien i sesje.",
+      "shortDesc": "Zapisuj i przełączaj stany okien natychmiastowo."
+    },
+    "tigerSimfoniPortal": {
+      "name": "Tiger Simfoni Portal",
+      "description": "Symulator platformy szkoleniowej dla studentów branży turystycznej do ćwiczenia ważnych egzaminów.",
+      "shortDesc": "Symulator treningu egzaminów turystycznych."
+    },
+    "scholare": {
+      "name": "Scholare",
+      "description": "Miejsce spotkań edukacyjnych, które łączy nauczycieli i studentów z wielu dziedzin.",
+      "shortDesc": "Łączy nauczycieli i studentów na całym świecie."
+    }
+  },
+  "footer": {
+    "company": "Hologramview Technologies",
+    "description": "Tworzymy innowacyjne rozwiązania cyfrowe dostosowane do Twoich potrzeb. Od niestandardowego oprogramowania po implementację AI, budujemy technologię, która przekształca firmy.",
+    "quickLinks": "Szybkie Linki",
+    "legal": "Prawne",
+    "termsOfService": "Warunki Użytkowania",
+    "privacyPolicy": "Polityka Prywatności",
+    "copyright": "Wszystkie prawa zastrzeżone.",
+    "builtWith": "Stworzone z ❤️ przez Hologramview Technologies"
+  },
+  "services": {
+    "title": "Nasze Usługi",
+    "subtitle": "Kompleksowe rozwiązania technologiczne dla nowoczesnych firm",
+    "customSoftware": "Rozwój Niestandardowego Oprogramowania",
+    "aiSolutions": "Rozwiązania AI i Uczenia Maszynowego",
+    "webDevelopment": "Rozwój Stron i Aplikacji Mobilnych",
+    "consulting": "Doradztwo Technologiczne",
+    "heroTitle": "Hologramview Technologies",
+    "heroSubtitle": "Nasze Usługi",
+    "heroDescription": "W Hologramview Technologies tworzymy innowacyjne rozwiązania cyfrowe dostosowane do Twoich potrzeb.",
+    "weDesign": "Projektujemy:",
+    "weDesignSubtitle": "Od koncepcji do wdrożenia, dostarczamy kompleksowe rozwiązania cyfrowe",
+    "contactTitle": "Skontaktuj się z nami",
+    "contactDescription": "Gotowy, aby ożywić swoją cyfrową wizję? Porozmawiajmy o Twoim projekcie.",
+    "items": {
+      "customSoftware": {
+        "name": "Niestandardowe Oprogramowanie",
+        "description": "Dostosowane rozwiązania oprogramowania budowane od podstaw, aby spełnić Twoje specyficzne wymagania biznesowe i przepływy pracy."
+      },
+      "webpages": {
+        "name": "Strony Internetowe",
+        "description": "Nowoczesne, responsywne strony internetowe, które prezentują Twoją markę i angażują odbiorców na wszystkich urządzeniach."
+      },
+      "softwareSystems": {
+        "name": "Systemy Oprogramowania",
+        "description": "Złożone systemy klasy korporacyjnej zaprojektowane w celu usprawnienia operacji i zwiększenia produktywności."
+      },
+      "iosApps": {
+        "name": "Aplikacje iOS",
+        "description": "Natywne aplikacje na iPhone i iPad, które zapewniają wyjątkowe doświadczenia użytkownika na urządzeniach Apple."
+      },
+      "androidApps": {
+        "name": "Aplikacje Android",
+        "description": "Potężne aplikacje Android zoptymalizowane pod kątem różnorodnego ekosystemu Android i bazy użytkowników."
+      },
+      "aiImplementation": {
+        "name": "Implementacja AI",
+        "description": "Inteligentna automatyzacja i funkcje napędzane przez AI w celu transformacji procesów biznesowych i podejmowania decyzji."
+      }
+    }
+  },
+  "about": {
+    "title": "O Nas",
+    "teamQuote": "W Hologramview Technologies nie tylko tworzymy oprogramowanie—tworzymy doświadczenia, które rozszerzają to, co jest możliwe w pracy, nauce i eksploracji."
+  }
+}
