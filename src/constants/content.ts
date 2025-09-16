@@ -50,14 +50,14 @@ export const products = [
     name: 'Floatlearn',
     description: 'An innovative floating learning system that teaches you while you work, blending micro-learning with productivity.',
     shortDesc: 'Floating learning system while you work.',
-    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1200&q=80', // Soap bubbles floating in air - perfect for learning concept
+    image: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=1200&q=80', // Chat/message bubbles with text - perfect for language learning app
     bgImage: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
   },
   {
     name: 'Space Choices',
     description: 'A productivity tool that chooses screens fast and lets you save window states and sessions.',
     shortDesc: 'Save and switch window states instantly.',
-    image: 'https://images.unsplash.com/photo-1542330952-bffc55e812b2?auto=format&fit=crop&w=1200&q=80', // Mac screen with grid layout
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80', // Computer screen close-up with code/windows
     bgImage: 'https://images.unsplash.com/photo-1523371683773-1f4c88dd19c7?auto=format&fit=crop&w=1200&q=80',
   },
   {

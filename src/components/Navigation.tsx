@@ -68,7 +68,7 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex justify-between items-center py-8">
           <div className="flex items-center">
             {/* 3D Cube Logo */}
@@ -170,7 +170,7 @@ export default function Navigation() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute top-full left-0 mt-1 w-80 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50"
+                  className="absolute top-full right-0 mt-1 w-80 max-w-[90vw] bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50 transform -translate-x-0 lg:-translate-x-1/2"
                   onMouseEnter={handleDropdownMouseEnter}
                   onMouseLeave={handleDropdownMouseLeave}
                 >
