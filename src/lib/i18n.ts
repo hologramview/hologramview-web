@@ -27,14 +27,14 @@ const translations = {
   pl,
 }
 
-import { locales, defaultLocale, languages } from './constants'
+import { locales, defaultLocale, languages, type Locale } from './constants'
 
 export { locales, defaultLocale, languages }
 
-export function getLocaleFromPathname(pathname: string): string {
+export function getLocaleFromPathname(pathname: string): Locale {
   const pathParts = pathname.split('/').filter(Boolean)
   const potentialLocale = pathParts[0]
-  return locales.includes(potentialLocale) ? potentialLocale : defaultLocale
+  return locales.includes(potentialLocale as Locale) ? potentialLocale as Locale : defaultLocale
 }
 
 export function useTranslation(locale?: string) {
