@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "services": "Services",
+    "language": "Language"
+  },
+  "home": {
+    "title": "About Hologramview Technologies",
+    "subtitle": "Hologramview Technologies is a software innovation company dedicated to building applications that transform industries and empower individuals.",
+    "mission": "Our mission is to combine creativity, intelligence, and usability into software solutions that make technology more human-centered and future-ready.",
+    "focusTitle": "We focus on creating tools for:",
+    "productsTitle": "Our Products & Innovations"
+  },
+  "footer": {
+    "company": "Hologramview Technologies",
+    "description": "We create innovative digital solutions tailored to your needs. From custom software to AI implementation, we build technology that transforms businesses.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "copyright": "All rights reserved.",
+    "builtWith": "Built with ❤️ by Hologramview Technologies"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive technology solutions for modern businesses",
+    "customSoftware": "Custom Software Development",
+    "aiSolutions": "AI & Machine Learning Solutions",
+    "webDevelopment": "Web & Mobile Development",
+    "consulting": "Technology Consulting"
+  },
+  "about": {
+    "title": "About Us",
+    "teamQuote": "At Hologramview Technologies, we don't just build software—we build experiences that expand what's possible in work, learning, and exploration."
+  }
+}

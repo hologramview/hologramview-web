@@ -50,7 +50,7 @@ export const products = [
     name: 'Floatlearn',
     description: 'An innovative floating learning system that teaches you while you work, blending micro-learning with productivity.',
     shortDesc: 'Floating learning system while you work.',
-    image: 'https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1200&q=80', // Soap bubbles floating in air - perfect for learning concept
     bgImage: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
   },
   {

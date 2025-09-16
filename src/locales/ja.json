@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "products": "製品",
+    "services": "サービス",
+    "language": "言語"
+  },
+  "home": {
+    "title": "Hologramview Technologiesについて",
+    "subtitle": "Hologramview Technologiesは、業界を変革し個人をエンパワーするアプリケーションの構築に専念するソフトウェアイノベーション企業です。",
+    "mission": "私たちのミッションは、創造性、知性、使いやすさを組み合わせて、技術をより人間中心で未来に備えたソフトウェアソリューションにすることです。",
+    "focusTitle": "私たちが注力するツールの分野：",
+    "productsTitle": "製品とイノベーション"
+  },
+  "footer": {
+    "company": "Hologramview Technologies",
+    "description": "お客様のニーズに合わせた革新的なデジタルソリューションを提供します。カスタムソフトウェアからAI実装まで、ビジネスを変革するテクノロジーを構築します。",
+    "quickLinks": "クイックリンク",
+    "legal": "法的事項",
+    "termsOfService": "利用規約",
+    "privacyPolicy": "プライバシーポリシー",
+    "copyright": "全著作権所有。",
+    "builtWith": "❤️でHologramview Technologiesが制作"
+  },
+  "services": {
+    "title": "サービス",
+    "subtitle": "現代のビジネスのための包括的な技術ソリューション",
+    "customSoftware": "カスタムソフトウェア開発",
+    "aiSolutions": "AI・機械学習ソリューション",
+    "webDevelopment": "Web・モバイル開発",
+    "consulting": "技術コンサルティング"
+  },
+  "about": {
+    "title": "私たちについて",
+    "teamQuote": "Hologramview Technologiesでは、単にソフトウェアを構築するだけでなく、仕事、学習、探求において可能性を広げる体験を創造しています。"
+  }
+}

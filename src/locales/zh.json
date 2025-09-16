@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "products": "产品",
+    "services": "服务",
+    "language": "语言"
+  },
+  "home": {
+    "title": "关于Hologramview Technologies",
+    "subtitle": "Hologramview Technologies是一家软件创新公司，致力于构建变革行业并赋能个人的应用程序。",
+    "mission": "我们的使命是将创造力、智能和可用性结合到软件解决方案中，使技术更加以人为本，为未来做好准备。",
+    "focusTitle": "我们专注于为以下领域创建工具：",
+    "productsTitle": "我们的产品与创新"
+  },
+  "footer": {
+    "company": "Hologramview Technologies",
+    "description": "我们创造适合您需求的创新数字解决方案。从定制软件到AI实施，我们构建变革企业的技术。",
+    "quickLinks": "快速链接",
+    "legal": "法律",
+    "termsOfService": "服务条款",
+    "privacyPolicy": "隐私政策",
+    "copyright": "版权所有。",
+    "builtWith": "由Hologramview Technologies用❤️构建"
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "现代企业的综合技术解决方案",
+    "customSoftware": "定制软件开发",
+    "aiSolutions": "AI和机器学习解决方案",
+    "webDevelopment": "Web和移动开发",
+    "consulting": "技术咨询"
+  },
+  "about": {
+    "title": "关于我们",
+    "teamQuote": "在Hologramview Technologies，我们不仅仅是构建软件——我们构建的是扩展工作、学习和探索可能性的体验。"
+  }
+}

@@ -2,6 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  i18n: {
+    locales: ['en', 'es', 'fr', 'de', 'ja', 'zh', 'pt', 'it', 'ru'],
+    defaultLocale: 'en',
+    localeDetection: true,
+  },
   images: {
     domains: [
       'images.unsplash.com',

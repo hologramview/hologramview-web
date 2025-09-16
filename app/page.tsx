@@ -92,11 +92,18 @@ export default function Home() {
             {products.map((product, index) => (
               <motion.article
                 key={product.name}
-                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-48"
+                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-48 h-80"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
+                {/* Coming Soon Stamp */}
+                <div className="absolute top-4 right-4 z-20">
+                  <div className="bg-blue-500 text-white px-3 py-1 text-xs font-bold uppercase tracking-wide rounded-md transform rotate-12 shadow-lg">
+                    Coming Soon!
+                  </div>
+                </div>
+                
                 <Image
                   src={product.image}
                   alt={product.name}
@@ -104,11 +111,12 @@ export default function Home() {
                   className="absolute inset-0 -z-10 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
-                <div className="relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+                
+                <div className="relative flex-1 flex flex-col justify-end">
+                  <h3 className="text-lg font-semibold leading-6 text-white min-h-[3rem] flex items-end">
                     {product.name}
                   </h3>
-                  <p className="mt-2 text-sm leading-6 text-gray-300">
+                  <p className="mt-2 text-sm leading-6 text-gray-300 line-clamp-3">
                     {product.description}
                   </p>
                 </div>
