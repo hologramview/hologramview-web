@@ -64,22 +64,6 @@ export default function Footer() {
                   Services
                 </Link>
               </li>
-              <li>
-                <Link 
-                  href="/blog" 
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  href="/support" 
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
-                >
-                  Support
-                </Link>
-              </li>
             </ul>
           </div>
 

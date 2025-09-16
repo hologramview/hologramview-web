@@ -198,18 +198,6 @@ export default function Navigation() {
             >
               Services
             </Link>
-            <Link
-              href="/blog"
-              className="text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
-            >
-              Blog
-            </Link>
-            <Link
-              href="/support"
-              className="text-lg font-medium text-gray-900 hover:text-gray-700 transition-colors"
-            >
-              Support
-            </Link>
           </div>
         </div>
       </div>
