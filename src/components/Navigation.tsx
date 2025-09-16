@@ -46,12 +46,22 @@ export default function Navigation() {
     }, 2000)
   }
 
-  const handleProductsClick = () => {
+  const handleProductsClick = (e: React.MouseEvent) => {
     // Close the dropdown immediately when Products is clicked
     setIsProductsOpen(false)
     if (hoverTimeout) {
       clearTimeout(hoverTimeout)
       setHoverTimeout(null)
+    }
+    
+    // Smooth scroll to products section
+    e.preventDefault()
+    const productsSection = document.getElementById('products')
+    if (productsSection) {
+      productsSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
     }
   }
 

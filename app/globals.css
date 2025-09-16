@@ -33,3 +33,13 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Prevent horizontal overflow globally */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -6,7 +6,7 @@ import { focusAreas, products, companyInfo } from '@/constants/content'
 
 export default function Home() {
   return (
-    <div className="bg-white pt-40">
+    <div className="bg-white pt-40 overflow-x-hidden">
       {/* Hero section */}
       <div className="relative isolate overflow-hidden">
         <div className="absolute inset-0">
@@ -88,7 +88,7 @@ export default function Home() {
               Our Products & Innovations
             </p>
           </div>
-          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 px-4 sm:px-0">
             {products.map((product, index) => (
               <motion.article
                 key={product.name}
@@ -113,10 +113,10 @@ export default function Home() {
                 <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
                 
                 <div className="relative flex-1 flex flex-col justify-end">
-                  <h3 className="text-lg font-semibold leading-6 text-white min-h-[3rem] flex items-end">
+                  <h3 className="text-lg font-semibold leading-6 text-white h-14 flex items-center mb-2">
                     {product.name}
                   </h3>
-                  <p className="mt-2 text-sm leading-6 text-gray-300 line-clamp-3">
+                  <p className="text-sm leading-6 text-gray-300 line-clamp-3">
                     {product.description}
                   </p>
                 </div>
