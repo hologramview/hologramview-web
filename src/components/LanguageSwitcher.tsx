@@ -10,12 +10,22 @@ export default function LanguageSwitcher() {
   const pathname = usePathname()
   
   // Extract current locale from pathname or default to 'en'
-  const currentLocale = pathname.startsWith('/') ? pathname.split('/')[1] : 'en'
-  const locale = languages.find(lang => lang.code === currentLocale)?.code || 'en'
+  const pathParts = pathname.split('/').filter(Boolean)
+  const potentialLocale = pathParts[0]
+  const locale = languages.find(lang => lang.code === potentialLocale)?.code || 'en'
   const currentLanguage = languages.find(lang => lang.code === locale) || languages[0]
 
   const handleLanguageChange = (langCode: string) => {
-    const newPath = langCode === 'en' ? pathname.replace(/^\/[a-z]{2}/, '') || '/' : `/${langCode}${pathname.replace(/^\/[a-z]{2}/, '') || ''}`
+    // Remove current locale from pathname if it exists
+    let basePath = pathname
+    if (pathname.match(/^\/[a-z]{2}(\/|$)/)) {
+      basePath = pathname.replace(/^\/[a-z]{2}/, '') || '/'
+    }
+    
+    // Create new path with selected language
+    const newPath = langCode === 'en' ? basePath : `/${langCode}${basePath}`
+    
+    // Navigate to new path
     window.location.href = newPath
     setIsOpen(false)
   }
