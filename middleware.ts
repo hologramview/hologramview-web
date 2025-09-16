@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
-import { locales, defaultLocale } from '@/lib/constants'
+import { locales, defaultLocale, type Locale } from '@/lib/constants'
 
 function getLocale(request: NextRequest) {
   // Check if there is any supported locale in the pathname
@@ -13,7 +13,7 @@ function getLocale(request: NextRequest) {
   if (pathnameIsMissingLocale) {
     // Get locale from Accept-Language header
     const acceptLanguage = request.headers.get('accept-language')
-    let detectedLocale = defaultLocale
+    let detectedLocale: Locale = defaultLocale
 
     if (acceptLanguage) {
       const languages = acceptLanguage
@@ -21,16 +21,17 @@ function getLocale(request: NextRequest) {
         .map(lang => lang.split(';')[0].trim().toLowerCase())
       
       // Find the first supported locale
-      detectedLocale = languages.find(lang => 
-        locales.includes(lang) || 
-        locales.includes(lang.split('-')[0])
-      ) || defaultLocale
-
-      // Handle country-specific locales (e.g., 'en-US' -> 'en')
-      if (!locales.includes(detectedLocale) && detectedLocale.includes('-')) {
-        const baseLang = detectedLocale.split('-')[0]
-        if (locales.includes(baseLang)) {
-          detectedLocale = baseLang
+      for (const lang of languages) {
+        if (locales.includes(lang as Locale)) {
+          detectedLocale = lang as Locale
+          break
+        }
+        
+        // Check base language for country-specific locales (e.g., 'en-US' -> 'en')
+        const baseLang = lang.split('-')[0]
+        if (locales.includes(baseLang as Locale)) {
+          detectedLocale = baseLang as Locale
+          break
         }
       }
     }
