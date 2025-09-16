@@ -17,12 +17,7 @@ export default function BlogPost() {
       try {
         const { data, error: fetchError } = await supabase
           .from('blog_posts')
-          .select(`
-            *,
-            auth.users!author_id (
-              email
-            )
-          `)
+          .select('*')
           .eq('slug', params.slug)
           .eq('status', 'published')
           .single()
@@ -86,7 +81,7 @@ export default function BlogPost() {
         <div className="mx-auto max-w-2xl">
           <div className="mb-8">
             <time dateTime={post.published_at} className="text-gray-500">
-              {formatDate(post.published_at)}
+              {post.published_at ? formatDate(post.published_at) : 'No date'}
             </time>
             <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               {post.title}
@@ -95,7 +90,7 @@ export default function BlogPost() {
               <div className="h-10 w-10 rounded-full bg-gray-50" />
               <div className="ml-4">
                 <p className="text-sm font-semibold text-gray-900">
-                  {(post as any).users?.email}
+                  Hologramview Technologies
                 </p>
               </div>
             </div>
