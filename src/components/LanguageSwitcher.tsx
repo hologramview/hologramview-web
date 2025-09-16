@@ -1,20 +1,22 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { useTranslation, languages } from '@/lib/i18n'
+import { languages } from '@/lib/i18n'
 
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false)
-  const { locale } = useTranslation()
-  const router = useRouter()
-
+  const pathname = usePathname()
+  
+  // Extract current locale from pathname or default to 'en'
+  const currentLocale = pathname.startsWith('/') ? pathname.split('/')[1] : 'en'
+  const locale = languages.find(lang => lang.code === currentLocale)?.code || 'en'
   const currentLanguage = languages.find(lang => lang.code === locale) || languages[0]
 
   const handleLanguageChange = (langCode: string) => {
-    const { pathname, asPath, query } = router
-    router.push({ pathname, query }, asPath, { locale: langCode })
+    const newPath = langCode === 'en' ? pathname.replace(/^\/[a-z]{2}/, '') || '/' : `/${langCode}${pathname.replace(/^\/[a-z]{2}/, '') || ''}`
+    window.location.href = newPath
     setIsOpen(false)
   }
 

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { products } from '@/constants/content'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const navigation = [
   { name: 'About', href: '/about' },
@@ -208,6 +209,9 @@ export default function Navigation() {
             >
               Services
             </Link>
+            
+            {/* Language Switcher */}
+            <LanguageSwitcher />
           </div>
         </div>
       </div>
